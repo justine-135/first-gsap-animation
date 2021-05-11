@@ -97,3 +97,31 @@ h3 {
 	background-color: rgb(30, 85, 51);
 	transform: translateY(100%);
 }
+
+button {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.intro,
+	h3 {
+		font-size: 3.2rem;
+	}
+	button {
+		display: block;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+
+	svg {
+		height: 30px;
+	}
+	ul {
+		transform: translateY(-60px);
+		width: 100%;
+	}
+	.add {
+		transform: translateY(60px);
+	}
+}
