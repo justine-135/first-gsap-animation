@@ -1,0 +1,43 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+/* Global styles come from external css https://codepen.io/GreenSock/pen/JGaKdQ*/
+
+body {
+	overflow-y: hidden;
+}
+
+.box {
+	cursor: pointer;
+	height: 50px;
+	border-radius: 50%;
+	width: 50px;
+}
+
+.pink {
+	background-color: pink;
+}
+.green {
+	background-color: green;
+}
+.orange {
+	background-color: orange;
+}
+.grey {
+	background-color: grey;
+}
+
+.cover {
+	background-color: lightcoral;
+	height: 100vh;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
