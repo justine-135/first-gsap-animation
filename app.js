@@ -10,19 +10,19 @@
 
 let tl = gsap.timeline();
 
-tl.from(".cover", {
+tl.to("p", {
+    y: -7,
     duration: 1,
-    y: 1000
+    stagger: 0.75
 })
-  
-//   document.querySelectorAll(".box").forEach(function(box) {
-//     box.addEventListener("click", function() {
-//       gsap.to(".box", {
-//         duration: 0.5, 
-//         opacity: 0, 
-//         y: 100, 
-//         stagger: 0.1,
-//         ease: "back.in"
-//       });
-//     });
-//   });
+
+tl.to(".slider",{
+    duration: 1,
+    y: "-100%"
+})
+
+tl.to(".intro",{
+    duration: 1,
+    y: "-100%",
+    delay: 0.3
+}, "-=1")

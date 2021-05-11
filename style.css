@@ -4,40 +4,96 @@
 	box-sizing: border-box;
 }
 
-/* Global styles come from external css https://codepen.io/GreenSock/pen/JGaKdQ*/
+html {
+	font-size: 62.5%;
+}
 
 body {
-	overflow-y: hidden;
+	font-family: "Poppins", sans-serif;
 }
 
-.box {
-	cursor: pointer;
-	height: 50px;
-	border-radius: 50%;
-	width: 50px;
-}
-
-.pink {
-	background-color: pink;
-}
-.green {
-	background-color: green;
-}
-.orange {
-	background-color: orange;
-}
-.grey {
-	background-color: grey;
-}
-
-.cover {
-	background-color: lightcoral;
+.bg {
 	height: 100vh;
+	background-image: url("bg.jpg");
+	background-size: cover;
+	object-fit: cover;
+	background-position: center;
+	position: relative;
 }
 
-main {
+nav {
+	height: 10vh;
+	display: flex;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-family: 700;
+	color: rgb(255, 255, 255);
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+
+ul li {
+	list-style: none;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: white;
+}
+
+h3 {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-size: 6.4rem;
+	font-weight: 500;
+	color: white;
+	transform: translate(-50%, -30%);
+}
+
+.intro {
+	position: fixed;
+	top: 0%;
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-size: 6.4rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	line-height: 10vh;
+}
+
+.intro-text {
+	margin-top: 10vh;
+}
+
+.intro p {
+	transform: translateY(100%);
+	position: relative;
+}
+
+.hide {
+	height: 12vh;
+	background-color: black;
+	z-index: 2;
+	position: relative;
+}
+
+.slider {
 	height: 100vh;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	background-color: rgb(30, 85, 51);
+	transform: translateY(100%);
 }
